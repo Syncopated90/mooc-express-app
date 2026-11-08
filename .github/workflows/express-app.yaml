@@ -20,4 +20,6 @@ jobs:
       password: ${{secrets.DOCKER_PASSWORD}}
    - name: push to docker hub
      uses: docker/build-push-action@v7
-     #
+     with:
+      push: true
+      tags: syncopated1/express-app:latest
